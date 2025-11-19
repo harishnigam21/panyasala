@@ -1,10 +1,13 @@
 import "./App.css";
-import { Provider } from "react-redux";
 import myStore from "./store/Store";
+import { Provider } from "react-redux";
+import Home from "./Home";
 function App() {
   return (
     <Provider store={myStore}>
-      <main className="text-red-500">Hello</main>
+      <Header/>
+      <Home />
+      <Footer/>
     </Provider>
   );
 }
